@@ -35,14 +35,14 @@ export default function SignIn() {
     });
 
     const onSubmit = async (values: z.infer<typeof signInSchema>) => {
-        try {
-            const result = await handleCredentialsSignin(values);
-            if (result?.message) {
-                setGlobalError(result.message);
-            }
-        } catch (error) {
-            console.log("An unexpected error occurred. Please try again.");
-        }
+        // try {
+        //     const result = await handleCredentialsSignin(values);
+        //     if (result?.message) {
+        //         setGlobalError(result.message);
+        //     }
+        // } catch (error) {
+        //     console.log("An unexpected error occurred. Please try again.");
+        // }
     };
 
     return (
